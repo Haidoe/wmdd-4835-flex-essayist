@@ -197,19 +197,22 @@ main p {
   gap: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .pagination ul li:first-of-type::after {
   content: "|";
-  margin-left: 0.5rem;
 }
 
-.pagination ul li:first-of-type i {
-  margin-right: 0.5rem;
+.pagination ul li {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
-.pagination ul li:first-of-type i {
-  margin-left: 0.5rem;
+.pagination ul li em {
+  font-size: 1.5rem;
 }
 
 article:not(:last-of-type)::after {
@@ -350,8 +353,12 @@ form textarea {
   }
 
   .promotional {
-    background: url("https://picsum.photos/1200/500?random=999"),
-      rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("https://picsum.photos/1200/500?random=999");
     margin-bottom: 0;
     justify-content: center;
     color: white;
