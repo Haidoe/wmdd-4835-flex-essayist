@@ -447,10 +447,12 @@ form textarea {
 
   header nav {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .ul-group {
     flex-direction: column;
+    align-items: stretch;
   }
 
   main {
