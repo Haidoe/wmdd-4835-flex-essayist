@@ -165,6 +165,8 @@ main p {
 
 .article-footer .category span {
   font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0.3rem;
 }
 
 .article-footer .category ul {
